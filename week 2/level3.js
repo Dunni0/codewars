@@ -11,4 +11,5 @@ console.log(sentence.replace(/[@$&%#!*,;]/g, ""))
 // 4
 let incomeDes = "He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month"
 let allIncome = incomeDes.match(/\d+/g)
-console.log(Number(allIncome[0]) + Number(allIncome[1]) + Number(allIncome[2]))
+let totalInc = Number(allIncome[0]) + Number(allIncome[1]) + Number(allIncome[2])
+console.log(totalInc * 12 )
